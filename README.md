@@ -14,7 +14,7 @@
     <main class="container">
     <div class="row justify-content-center mt-5 m-5">
         <figure class="figure">
-            <img src="Thresh.jpg" onclick="Click()" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <img src="lantern.jpg" onclick="Click()" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <figcaption id="maintxt" class="figure-caption">Sebrané lanterny: 0</figcaption>
             <figcaption id="dmg" class="text-center">DMG = 5</figcaption>
             <figcaption id=lanterny_s class="text-center">Lanterny/s = 0</figcaption>
