@@ -43,6 +43,7 @@
               <button onclick="buyDuse()" type="button" class="btn btn-primary">Koupit</button>
             </div>
           </div>
-    </div>       
+    </div>
+    <button href="index.html" type="button" class="btn btn-primary">jdi</button>
 </body>
 </html>
