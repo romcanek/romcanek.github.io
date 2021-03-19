@@ -5,6 +5,10 @@ var dmg;
 var lanterny;        //sem retard lanterny = duse
 var lanterny_s;
 var lanterny_cena;
+var bm_cena;
+var bm;
+bm = 0
+bm_cena = 420;
 lanterny = 0;
 lanterny_cena = 150;
 lanterny_s = 0;
@@ -56,6 +60,19 @@ function buyDuse(){
     document.getElementById("duse_cena").innerHTML = "cena: " + lanterny_cena + " lantern";
     document.getElementById("lanterny_s").innerHTML = "Lanterny/s = " + lanterny_s
 }
+function buybm(){
+    if (x >= bm_cena)
+    {
+        bm ++;
+        lanterny_s = lanterny_s + 10
+        x = x - bm_cena
+        bm_cena = Math.round(bm_cena * 1.5)
+    }
+    document.getElementById("maintxt").innerHTML = "Sebrané lanterny: " + x;
+    document.getElementById("bm_cena").innerHTML = "cena: " + bm_cena + " lantern";
+    document.getElementById("lanterny_s").innerHTML = "Lanterny/s = " + lanterny_s;
+    document.getElementById("bm").innerHTML = "koupených přeměn: " + bm;
+}
 
 function saveCookies(){
     localStorage.x = JSON.stringify(x)
@@ -65,17 +82,27 @@ function saveCookies(){
     localStorage.cena_l = JSON.stringify(lanterny_cena)
     localStorage.lanterny = JSON.stringify(lanterny)
     localStorage.lanterny_s = JSON.stringify(lanterny_s)
+    localStorage.bm = JSON.stringify(bm)
+    localStorage.bm_cena = JSON.stringify(bm_cena)
     //start reusable code
 }
 
 function loadCookies(){
-    x = JSON.parse(localStorage.x)
-    kalista = JSON.parse(localStorage.kalista)
-    dmg = JSON.parse(localStorage.dmg)
-    kalista_cena = JSON.parse(localStorage.cena_k)
-    lanterny_cena = JSON.parse(localStorage.cena_l)
-    lanterny = JSON.parse(localStorage.lanterny)
-    lanterny_s = JSON.parse(localStorage.lanterny_s)
+    try
+    {
+        x = JSON.parse(localStorage.x)
+        kalista = JSON.parse(localStorage.kalista)
+        dmg = JSON.parse(localStorage.dmg)
+        kalista_cena = JSON.parse(localStorage.cena_k)
+        lanterny_cena = JSON.parse(localStorage.cena_l)
+        lanterny = JSON.parse(localStorage.lanterny)
+        lanterny_s = JSON.parse(localStorage.lanterny_s)
+        bm = JSON.parse(localStorage.bm)
+        bm_cena = JSON.parse(localStorage.bm_cena)
+    }
+    catch{
+        console.log("Nic se nedeje")
+    }
     document.getElementById("maintxt").innerHTML = "Sebrané lanterny: " + x;
     document.getElementById("kalista").innerHTML = "koupených kalist: " + kalista
     document.getElementById("dmg").innerHTML = "DMG = " + dmg;
@@ -83,4 +110,6 @@ function loadCookies(){
     document.getElementById("duse_cena").innerHTML = "cena: " + lanterny_cena + " lantern";
     document.getElementById("duse").innerHTML = "koupených duší: " + lanterny;
     document.getElementById("kalista_cena").innerHTML = "cena: " + kalista_cena + " lantern"
+    document.getElementById("bm").innerHTML = "koupených přeměn: " + bm;
+    document.getElementById("bm_cena").innerHTML = "cena: " + bm_cena + " lantern";
 }
