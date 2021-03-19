@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="user-scalable=no" />
+    <meta name="viewport" content="width=300"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.css">
     <script src="main.js"></script>
@@ -34,7 +35,7 @@
               <button onclick="buyKalista()" type="button" class="btn btn-primary">Koupit</button>
             </div>
           </div>
-          <div class="media ml-0 ml-md-5 mt-5 mt-md-0">
+          <div class="media ml-md-0 ml-4 mt-5 mt-md-0">
             <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="duse.jpg" alt="Generic placeholder image">
             <div class="media-body">
               <h5 class="mt-0">Duše</h5>
@@ -44,6 +45,6 @@
               <button onclick="buyDuse()" type="button" class="btn btn-primary">Koupit</button>
             </div>
           </div>
-    </div>
+    </div>       
 </body>
 </html>
