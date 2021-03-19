@@ -19,7 +19,7 @@
             <figcaption id="maintxt" class="figure-caption">Sebrané lanterny: 0</figcaption>
             <figcaption id="dmg" class="text-center">DMG = 5</figcaption>
             <figcaption id=lanterny_s class="text-center">Lanterny/s = 0</figcaption>
-            <button onclick="saveCookies()" type="button" class="btn btn-primary">Uložit</button>
+            <button onclick="alOut()" type="button" class="btn btn-primary">Uložit</button>
             <button onclick="loadCookies()" type="button" class="btn btn-primary">Načíst</button>
         </figure>
     </div>
