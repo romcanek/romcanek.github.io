@@ -25,7 +25,7 @@
     </div>
     </main> 
     <div class="row justify-content-center mt-5">
-        <div class="media mr-5 ml-5">
+        <div class="media ml-4 mr-md-5">
             <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="kalista.jpg" alt="Generic placeholder image">
             <div class="media-body">
               <h5 class="mt-0">Kalista</h5>
@@ -35,7 +35,7 @@
               <button onclick="buyKalista()" type="button" class="btn btn-primary">Koupit</button>
             </div>
           </div>
-          <div class="media ml-md-0 ml-4 mt-5 mt-md-0">
+          <div class="media ml-md-0 ml-4 mt-5 mt-md-0 mr-md-5">
             <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="duse.jpg" alt="Generic placeholder image">
             <div class="media-body">
               <h5 class="mt-0">Duše</h5>
@@ -45,6 +45,16 @@
               <button onclick="buyDuse()" type="button" class="btn btn-primary">Koupit</button>
             </div>
           </div>
-    </div>       
+          <div class="media ml-md-0 ml-4 mt-5 mt-md-0">
+            <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="bloodmoon.png" alt="Generic placeholder image">
+            <div class="media-body">
+              <h5 class="mt-0">Bloodmoon</h5>
+              lanterny/s +10 <br>
+              <p id="bm" class="m-0">koupených přeměn: 0</p> <br>
+              <p id="bm_cena">cena: 420 lantern</p>
+              <button onclick="buybm()" type="button" class="btn btn-primary">Koupit</button>
+            </div>
+          </div>
+    </div>      
 </body>
 </html>
