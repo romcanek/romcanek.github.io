@@ -73,6 +73,12 @@ function buybm(){
     document.getElementById("lanterny_s").innerHTML = "Lanterny/s = " + lanterny_s;
     document.getElementById("bm").innerHTML = "koupených přeměn: " + bm;
 }
+function alOut(){
+    if (confirm("Chceš si uložit hru? Tvoje předešlé uložení se přemaže."))
+    {
+        saveCookies();
+    }
+}
 
 function saveCookies(){
     localStorage.x = JSON.stringify(x)
