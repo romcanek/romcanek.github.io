@@ -1,60 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="user-scalable=no" />
-    <meta name="viewport" content="width=300"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.css">
     <script src="main.js"></script>
-    <title>Clicker</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Kalkulačka</title>
 </head>
 <body>
-    <main class="container">
-    <div class="row justify-content-center mt-5 m-5">
-        <figure class="figure">
-            <img src="lantern.jpg" onclick="Click()" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-            <figcaption id="maintxt" class="figure-caption">Sebrané lanterny: 0</figcaption>
-            <figcaption id="dmg" class="text-center">DMG = 5</figcaption>
-            <figcaption id=lanterny_s class="text-center">Lanterny/s = 0</figcaption>
-            <button onclick="alOut()" type="button" class="btn btn-primary">Uložit</button>
-            <button onclick="loadCookies()" type="button" class="btn btn-primary">Načíst</button>
-        </figure>
-    </div>
-    </main> 
-    <div class="row justify-content-center mt-5">
-        <div class="media ml-4 mr-md-5">
-            <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="kalista.jpg" alt="Generic placeholder image">
-            <div class="media-body">
-              <h5 class="mt-0">Kalista</h5>
-              Click DMG +5 <br>
-              <p id="kalista" class="m-0">koupených kalist: 0</p> <br>
-              <p id="kalista_cena">cena: 100 lantern</p>
-              <button onclick="buyKalista()" type="button" class="btn btn-primary">Koupit</button>
-            </div>
-          </div>
-          <div class="media ml-md-0 ml-4 mt-5 mt-md-0 mr-md-5">
-            <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="duse.jpg" alt="Generic placeholder image">
-            <div class="media-body">
-              <h5 class="mt-0">Duše</h5>
-              lanterny/s +2 <br>
-              <p id="duse" class="m-0">koupených duší: 0</p> <br>
-              <p id="duse_cena">cena: 150 lantern</p>
-              <button onclick="buyDuse()" type="button" class="btn btn-primary">Koupit</button>
-            </div>
-          </div>
-          <div class="media ml-md-0 ml-4 mt-5 mt-md-0">
-            <img style="width: 128px; height: 128px;" class="align-self-center mr-3" src="bloodmoon.png" alt="Generic placeholder image">
-            <div class="media-body">
-              <h5 class="mt-0">Bloodmoon</h5>
-              lanterny/s +10 <br>
-              <p id="bm" class="m-0">koupených přeměn: 0</p> <br>
-              <p id="bm_cena">cena: 420 lantern</p>
-              <button onclick="buybm()" type="button" class="btn btn-primary">Koupit</button>
-            </div>
-          </div>
-    </div>      
+    <main>
+        <h1 class="nadpis">Kalkulačka</h1>
+        <div class="kalkulacka">
+            <input type="text" id="input" class="inputPole">
+            <script>document.getElementById("input").value = 0</script>
+            <div class="row"></div>
+            <div class="column"><button class="test prvni" onclick="addNum7()">7</button></div>
+            <div class="column"><button class="test" onclick="addNum8()">8</button></div>
+            <div class="column"><button class="test" onclick="addNum9()">9</button></div>
+            <div class="column"><button class="test plus" onclick="plus()">+</button></div>
+            <div class="column"><button class="test krat" onclick="krat()">×</button></div>
+            <div class="row"></div>
+            <div class="column"><button class="test prvni" onclick="addNum4()">4</button></div>
+            <div class="column"><button class="test" onclick="addNum5()">5</button></div>
+            <div class="column"><button class="test" onclick="addNum6()">6</button></div>
+            <div class="column"><button class="test minus" onclick="minus()">-</button></div>
+            <div class="column"><button class="test procento" onclick="procento()">%</button></div>
+            <div class="row"></div>
+            <div class="column"><button class="test prvni" onclick="addNum1()">1</button></div>
+            <div class="column"><button class="test" onclick="addNum2()">2</button></div>
+            <div class="column"><button class="test" onclick="addNum3()">3</button></div>
+            <div class="column"><button class="test deleno" onclick="deleno()">÷</button></div>
+            <div class="column"><button class="test abs" onclick="abs()">Abs</button></div>
+            <div class="row"></div>
+            <div class="column"><button class="test prvni" onclick="addNum0()">0</button></div>
+            <div class="column"><button class="test decimal" onclick="decimal()">.</button></div>
+            <div class="column"><button class="test ac" onclick="ac()">AC</button></div>
+            <div class="column"><button class="test equal" onclick="equal()">=</button></div>
+        </div>
+    </main>
 </body>
 </html>
