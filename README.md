@@ -12,7 +12,7 @@
     <main>
         <h1 class="nadpis">Kalkulačka</h1>
         <div class="kalkulacka">
-            <input type="text" id="input" class="inputPole">
+            <input id="input" class="inputPole">
             <script>document.getElementById("input").value = 0</script>
             <div class="row"></div>
             <div class="column"><button class="test prvni" onclick="addNum7()">7</button></div>
