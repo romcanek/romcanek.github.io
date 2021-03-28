@@ -101,7 +101,7 @@ function decimal(){
     decimal_ready = false;     
 }
 function krat(){
-    predesla_hodnota += Number(document.getElementById("input").value);
+    predesla_hodnota = predesla_hodnota * Number(document.getElementById("input").value);
     document.getElementById("input").value = 0;
     decimal_ready = true;
     operace = "x"
@@ -114,13 +114,13 @@ function plus(){
     operace = "+"
 }
 function minus(){
-    predesla_hodnota += Number(document.getElementById("input").value);
+    predesla_hodnota = predesla_hodnota - Number(document.getElementById("input").value);
     document.getElementById("input").value = 0;
     decimal_ready = true;
     operace = "-"
 }
 function deleno(){
-    predesla_hodnota += Number(document.getElementById("input").value);
+    predesla_hodnota = predesla_hodnota / Number(document.getElementById("input").value);
     document.getElementById("input").value = 0;
     decimal_ready = true;
     operace = "/"
