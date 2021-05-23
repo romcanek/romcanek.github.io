@@ -325,6 +325,12 @@ figure > figcaption{
         max-width: 15rem;
         margin: 0 auto;
     }
+    footer > div > section > p{
+        font-size: 10pt;
+    }
+    footer > div > section > h3{
+        font-size: 1.5rem;
+    }
 }
 /*--galerie--*/
 .gallery{
