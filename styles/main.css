@@ -110,6 +110,10 @@ label{
         display: block;
         border-bottom: 1px solid var(--main-color);
     }
+    body > header{
+        display: flex;
+        flex-direction: column;
+    }
     #toggle:checked + .menu{
         display: flex;
         flex-direction: column;
