@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@600&display=swap');
+:root{
+    --main-bg-color: #f2eecb;
+    --main-color: black;
+    --accent-color: rgb(255, 123, 0);
+    --accent-contrast-color: rgb(0, 0, 165);
+    --space-large: 1em;
+    --space-small: .5em;
+    --main-font-size: 14pt;
+}
+html{
+    font-size: var(--main-font-size);
+    font-family: "Montserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*--main typography -- */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+p{
+    font-size: var(--main-font-size);
+    line-height: 32px;
+}
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+}
+a:hover{
+    color: var(--accent-contrast-color);
+}
+
+/* -- layout -- */
+body > header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-large);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+}
+
+body > header > nav > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+body > header > nav > ul > li > a{
+    color: var(--main-color);
+    text-decoration: none;
+    padding: var(--space-small);
+    margin: var(--space-small);
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+
+body > header > nav > ul > li > a:hover{
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+}
+.nav-titulka{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-titulka > h1{
+    font-size: 1.5rem;
+}
+
+/*--burger--*/
+nav{
+    text-align: right;
+}
+
+label{
+    margin: 0;
+    font-size: 30px;
+    line-height: 70px;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width: 650px){
+    label{
+        display: block;
+    }
+    .menu{
+        text-align: center;
+        width: 80%;
+        display: none;
+    }
+    .menu  a{
+        display: block;
+        border-bottom: 1px solid var(--main-color);
+    }
+    body > header{
+        display: flex;
+        flex-direction: column;
+    }
+    #toggle:checked + .menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* -- sections -- */
+.icon{
+    width: 55px;
+    height: 55px
+}
+
+.full-screen{
+    height: 100vh;
+}
+
+.title-image::after{
+    content: "";
+    background: url("../images/tavern.png");
+    opacity: 0.6;
+    filter: blur(3px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    
+    /*--parallax--*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bt-image::after{
+    content: "";
+    background: url("../images/bt.jpg");
+    opacity: 0.5;
+    filter: blur(1px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    
+    /*--parallax--*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.karty-image::after{
+    content: "";
+    background: url("../images/Karty.jpg");
+    filter: blur(4px);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    
+    /*--parallax--*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gl-image::after{
+    content: "";
+    background: url("../images/galerie-main.jpg");
+    filter: blur(2px);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    
+    /*--parallax--*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centered-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.titulka{
+    height: 20px;
+}
+
+.upoutavka{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    line-height: 10px;
+}
+.upoutavka > p{
+    margin-bottom: 50px;
+}
+
+.btn{
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    color: var(--main-color);
+}
+.btn:hover{
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+}
+
+/* -- figure --*/
+figure{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+figure > a > img{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+figure > img{
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+figure > figcaption{
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 12pt;
+}
+.zmensit{
+    width: auto; 
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.no-margin-figure{
+    margin-top: 0;
+    margin-bottom: 120px;
+}
+.fig-mt{
+    margin-top: 1%;
+}
+
+/*-- medias --*/
+@media only screen and (max-width: 1280px){
+    figure > img{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    figure > a > img{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    figure > figcaption{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 12pt;
+    }
+    .zmensit{
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 720px){
+    figure > img{
+        width: 100%;
+        padding: 0;
+    }
+    figure > a > img{
+        width: 100%;
+        padding: 0;
+    }
+    figure > figcaption{
+        padding: 0;
+        font-size: 12pt;
+    }
+    .photo{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .text{
+        max-width: 22rem;
+        margin: 0 auto;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .upoutavka{
+        padding-bottom: 15%;
+        padding-top: 15%;
+    }
+}
+@media only screen and (max-width: 425px){
+    .text{
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+    .zmensit{
+        height: 300px;
+    }
+}
+/*--galerie--*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*-- footer --*/
+footer{
+    margin-top: 10%;
+    min-height: 300px;
+    background-color: var(--main-bg-color);
+}
+footer > div > section > h3{
+    font-size: 1.5rem;
+}
+.footer-text{
+    font-size: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.footer-text > a {
+    color: var(--accent-contrast-color);
+}
+.footer-text > a:hover{
+    color: var(--accent-color);
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.socky{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.col > h3{
+    text-align: center;
+}
+.col > p{
+    text-align: center;
+}
+.col > ul > li{
+    list-style: none;
+    text-align: center;
+    line-height: 35px;
+}
+.col > ul{
+    padding-left: 0;
+}
