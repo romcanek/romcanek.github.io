@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="nav-titulka">
-        <img src="./images/hearthstone.svg" alt="HS - logo">
+        <img class="icon" src="./my_svg/hs_logo.svg" alt="HS - logo">
         <h1>Hearthstone</h1>
         </div>
         <nav>
@@ -120,6 +120,16 @@
                 <li class="footer-text">704 181 784</li>
                 <li class="footer-text">Hrádek nad Nisou, Železná 293</li>
                 </ul>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col socky">
+                <h3>Hearthstone socialní sítě:</h3>
+                <div class="gallery">
+                    <a href="https://www.facebook.com/Hearthstone.en/?brand_redir=498467596862680" target="_blank"><img class="icon" src="./my_svg/f_logo.svg" alt="Facebook logo"></a>
+                    <a href="https://twitter.com/playhearthstone?lang=cs" target="_blank"><img class="icon" src="./my_svg/twitter_logo.svg" alt="Twitter logo"></a>
+                    <a href="https://www.youtube.com/user/PlayHearthstone" target="_blank"><img class="icon" src="./my_svg/yt_logo.svg" alt="Youtube logo"></a>
+                </div>
             </section>
         </div>  
     </footer>
