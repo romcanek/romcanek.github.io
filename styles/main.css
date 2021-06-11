@@ -326,6 +326,7 @@ figure > figcaption{
     .text{
         max-width: 22rem;
         margin: 0 auto;
+        padding-top: 30px;
     }
     .row{
         display: flex;
