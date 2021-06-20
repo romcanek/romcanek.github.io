@@ -1,138 +1,104 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/lightbox.css">
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Hearthstone Titulka</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Classes</title>
 </head>
-<body>
-    <header>
-        <div class="nav-titulka">
-        <img class="icon" src="./my_svg/hs_logo.svg" alt="HS - logo">
-        <h1>Hearthstone</h1>
-        </div>
-        <nav>
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle">
-            <ul class="menu">
-                <li><a href="./index.html">Domů</a></li>
-                <li><a href="./battlegrounds.html">Battlegrounds</a></li>
-                <li><a href="./galerie.html">Galerie</a></li> 
-            </ul>
-        </nav>
+<body onresize="myFunc()" onload="myFunc()">
+    <header class="header">
+        <a href="https://hearthstone.fandom.com/wiki/Class" target="blank" class="logo">CLASSES</a>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Deck building</a></li>
+            <li><a href="#">About me</a></li>
+        </ul>
     </header>
-    <main>
-        <section class="full-screen title-image centered-content">
-            <h1 class="titulka">Hearthstone</h1>
-            <p>-Blizzard Entertainment</p>
-        </section>
 
-        <section class="text">
-            <h2>Co to je Hearthstone?</h2>
-            <p>
-                Hearthstone je jedna z nejpopulárnějších sběratelských karetních her, i když už
-                jeho slává hodně upadla. Hearthstone má několik různých módů. Pravidla toho základního
-                jsou poměrně prostá. Na začátku proti sobě stojí dva hráči, kteří si před začátekm zápasu vyberou
-                třídu a balíček, který chtějí hrát. Tříd je v Hearthstonu 10 (<i>warrior, mage, priest, warlock, druid, 
-                hunter, rogue, demon hunter, shaman</i>). Každá třída má svojí Hero power - základní schopnost, kterou může používat
-                během celé hry. Balíků je ve své podstatě neomezeně mnoho a záleží na každém, co si postaví nebo jestli se bude řídit
-                <a href="https://tempostorm.com/hearthstone/meta-snapshot/standard/5-18-2021" target="_blank">metou.</a><br>
-                Cílem hry je zabít vašeho nepřítele, který má 30 životů. Můžete toho dosáhnout několika způsoby. Ten základní je 
-                používat svoje miniony(karty, které mají útok a životy) k tomu, aby jste postupně nepřítele zabili
-                každá karta v hearthstonu stojí určitý počet many. Vaše mana začíná na jedné a každé kolo se vám přidá další.
-                Pro více informací doporučuji tento <a href="https://www.youtube.com/watch?v=O-5N5p-ywkg" target="_blank">guide.</a>
-            </p>
-        </section>
+    <section class="paralax paralax-1 centered-content" id="par1">
+    </section>
 
-        <figure>
-            <a href="./images/heropowers.png" data-lightbox="image-1">
-            <img class="section-img" src="./images/heropowers.png" alt="ranky">
-            </a>
-            <figcaption class="section-img">-přehled tříd a jejich Hero powers</figcaption>
-        </figure> 
+    <section class="text centered-content" id="par1t">
+        <h2>Demon Hunter</h2>
+        <p>
+            Demon Hunter je nově přidaná Classa do Hearthstonu. Jako jediný používá <a href="https://hearthstone.fandom.com/wiki/Outcast" target="blank">outcast mechaniku</a>
+            Při jeho vydání byl až moc silný a prošel nerfy. Jeho heropower jako jediná ve hře stojí pouze jednu manu a přidá mu jeden útok.
+            Díky tomu se u něj používájí ze jména agresivní balíky, i když jsou zde vyjímky třeba N'zoth Demon Hunter. 
+            Mezi jeho nejsilnější balíky patří odd Demon Hunter, který se hraje na wildu. Je neuvěritelně rychlý a je schopen nepřitele zabít
+            i v pozdějších fazí hry, protože má poměrně hodně možností jak dělat dmg. Jeho karty mají tmavě
+            zelený rámeček, který představuje Illidariho tetování.
+        </p>
+    </section>
 
-        <section class="text">
-            <h2>Hearthstone formáty</h2>
-            <p>
-                Kvůli tomu, že v Hearthstonu je spousty karet museli se zavést různé formáty. Formát limituje to
-                jaké můžete používat karty. V Hearthstonu jsou 4 formáty(<i>standard, wild, classic, casual</i>). Standard
-                Je základní formát, který povoluje hrát jenom karty z core setu(karty, které byli už v Hearthstonu betě) a
-                karty z posledích 2 let. Tento formát je zároveň ranked, to znamená, že za jeho hraní vám bude přiděleno jakési hodnocení
-                v podobě ranku. Ranků je 51. Je tu 5 hlavních stromů bronze, silver, gold, platinum, diamond, každý strom
-                má v sobě 10 ranků, každý 5. je záchytný. Nad těmito všemi ranky stojí legenda - nevyšší možný rank. Dalším formátem
-                je Wild. Je to také ranked formát, ale povoluje hrát všechny karty, co kdy vyšly. Poté je tu Casual obdoba Wildu, který ale není ranked,
-                hrajete bez hodnocení. Nejnovější a také nejvíc atypický formát je Classic. Je to ranked formát. Ve kterém můžete používat pouze
-                karty, které byly v Hearthstonu v roce 2014. Zároveň tyto karty si nechávají svojí původní podobu. To znamená, že se na ně nevztahují
-                nové buffy a nerfy(vylepšení a zeslabení).
-            </p>
-        </section>
+    <section class="paralax paralax-2 centered-content" id="par2">
+    </section>
 
-        <figure>
-            <a href="./images/ranks.jpg" data-lightbox="image-2">
-            <img src="./images/ranks.jpg" alt="ranky">
-            </a>
-            <figcaption>-přehled ranků</figcaption>
-        </figure>
+    <section class="text centered-content" id="par2t">
+        <h2>Druid</h2>
+        <p>
+            Druid je známý hlavně dvěma typy balíků. Jedním z nich je <a href="https://www.hearthstonetopdecks.com/decks/token-druid-6-legend-letequila-barrens-caverns" target="blank">token druid</a>
+            a tím druhý je nějaká forma ramp nebo hard control druida v dnešní době je to <a href="https://www.hearthstonetopdecks.com/decks/celestial-druid-early-1-legend-pockettrain-barrens-caverns/" target="blank">celestial druid</a>,
+            který patří k nejsilnějším balíků. Díky kartě Celestial alignment je schopný zastavit tlak nepřítele (pokud nepoužívá drahé karty) a pomocí rampy se dostat napřed.
+            Druid používá dvě speciální mechaniky rampu a choose one. Jeho heropower mu dá jeden armor a jeden útok. Jeho karty mají hnědý rámeček, který symbolizuje trny.
+        </p>
+    </section>
 
-        <section class="text">
-            <h2>Speciální módy</h2>
-            <p>
-                V Hearthstonu je několik speciálních módů(<i>Arena, Tavern Brawl, Duels, Battlegrounds</i>). Aréna je mód, který
-                si asi nejvíce ponechává původní styl hry. Hry jsou uplně stejné jako v klasickém módu. Rozdílem je výběr balíčků a odměny.
-                Před vstupem do arény budete potřebovat 150goldů, které získáte za plnění úkolů. Když vstoupíte do arény, 
-                prvně si budete vybírat třídu. Na výběr budete mít ze třech náhodných. Po výběru třídy si začnete vybírat karty.
-                Vždycky budete mít na výběr ze třech náhodných karet, které si přidáte do svého balíčku, dokud jich nemáte třicet.
-                Aréna povoluje to, že karty, které si vybíráte nemusíte vlastnit a dokonce můžete mít nekonečně mnoho duplikátu. V základním módu jsou
-                povoleny pouze 2 karty stejného druhu s vyjímkou legendarních karet, ta může být jen jedna. Aréna končí když prohrajete 3 zápasy
-                nebo vyhrajete 12. Po dokončení arény dostanete odměnu podle vašich výher v podobě balíčků, goldů, a dustů ze kterých se vyrábí karty.
-                Duels je mód hodně podobný aréně změnou je, že balík si postavíte sami a po každém zápese dostanete tresure karty.
-                Ty můžou být různé a většinou je nikde jinde neuvidíte. Tavern brawl je hodně speciální mód, protože každý týden
-                se mění. Tavern brawl je čistě o zábavě a vstup je zdrama. Pokud se chcete podívat, co vše za různé tavern brawly existuje.
-                Podívejte se <a href="https://hearthstone.fandom.com/wiki/Template:Brawls" target="_blank">zde.</a> Battlegroundy jsou hodně jiné
-                pokud se chcete dozvědět i o nich, klikněte <a href="./battlegrounds.html">zde</a> nebo nahoře v navigaci na položku Battlegrounds.
-            </p>
-        </section>
+    <section class="paralax paralax-3 centered-content" id="par3">
+    </section>
 
-        <section class="text upoutavka">
-            <h2>Jak na karty?</h2>
-            <p>Pokud tě zajímá více o kartách a jak je získat. Mám tady menší guide.</p>
-            <a class="btn" href="./karty.html">Guide na karty</a>
-        </section>
-    </main>
+    <section class="text centered-content" id="par3t">
+        <h2>Hunter</h2>
+        <p>
+            Hunter je asi nejagresivnější classa vůbec. Za celou dobu co existuje vzniklo jen málo kontrolních balíků, které byly
+            většinou mid-range třeba <a href="https://hearthstone-decks.net/reno-hunter-467-legend-cumflatulator/" target="blank">reno hunter</a>. Jeho ikonická heropower dává 2dmg do protivníkova hrdiny. Tato heropower ignoruje taunty.
+            Hunter patří ke classam, které mají secrety, ty jeho stojí dvě many. dále taky používá beasty a zbraně. K jeho nejsilnějším balíkům v dnešní době
+            patří <a href="https://www.hearthstonetopdecks.com/decks/face-hunter-8-legend-aikoio-barrens-caverns/" target="blank">face hunter</a>, hraný na standartu. Má veliké dps hlavně díky Trampling rhino.
+            Jeho karty mají lesově zelený rámeček s úzkým okrajem ve tvaru listů.
+
+        </p>
+    </section>
+
+    <section class="paralax paralax-4 centered-content" id="par4">
+    </section>
+
+    <section class="text centered-content" id="par4t">
+        <h2>Mage</h2>
+        <p>
+            Mage měl většinu své existence taky tři ikonické typy balíků a to <a href="https://www.hearthstonetopdecks.com/decks/tempo-mage-184-legend-punto-the-barrens/" target="blank">tempo mage</a>
+            v dnešní době spíše <a href="https://www.hearthpwn.com/decks/1384714-rank-1-legend-apm-mage" target="blank">apm mage</a>.
+            Další z nich je <a href="https://www.hearthstonetopdecks.com/decks/secret-mage-22-legend-toumlaratt-wild-s87/" target="blank">secret mage</a>,
+            který se dnes hraje na wildu. A tím posledním je hard-control mage například <a href="https://www.hearthstonetopdecks.com/deck-type/freeze-mage/" target="blank">freeze mage</a>.
+            Mage heropower dává jeden dmg kamkoliv bez ohledu na taunty. Patří mezi classy používající secrety. Mage karty mají světle modrý
+            okraj s tlustlou linkou arcane dustu.
+        </p>
+    </section>
+
+
     <footer>
         <div class="row">
-            <section class="col">
-                <h3>O mně</h3>
-                <p class="footer-text">
-                    Hearthstone hraju už od roku 2014. Jsem free-to-play hráč.<br>
-                    Moje oblíbená třída je warlock, rád hraju reno warlocka nebo zoo warlocka<br>
-                    Ve hře nejsem žádný expert, ale podařilo se mi dát legendu.
-                </p>
-            </section>
             <section class="col">
                 <h3>Kontakt</h3>
                 <ul>
                 <li class="footer-text"><a href="mailto:roman.tarnai.020@pslib.cz">roman.tarnai.020@pslib.cz</a></li>
                 <li class="footer-text">704 181 784</li>
-                <li class="footer-text">Hrádek nad Nisou, Železná 293</li>
+                <li class="footer-text">Czech republic, Hrádek nad Nisou</li>
                 </ul>
             </section>
         </div>
         <div class="row">
             <section class="col socky">
-                <h3>Hearthstone socialní sítě:</h3>
                 <div class="gallery">
-                    <a href="https://www.facebook.com/Hearthstone.en/?brand_redir=498467596862680" target="_blank"><img class="icon" src="./my_svg/f_logo.svg" alt="Facebook logo"></a>
-                    <a href="https://twitter.com/playhearthstone?lang=cs" target="_blank"><img class="icon" src="./my_svg/twitter_logo.svg" alt="Twitter logo"></a>
-                    <a href="https://www.youtube.com/user/PlayHearthstone" target="_blank"><img class="icon" src="./my_svg/yt_logo.svg" alt="Youtube logo"></a>
-                </div>
+                    <a href="https://www.facebook.com/Hearthstone.en/?brand_redir=498467596862680" target="_blank"><img class="icon" src="./photos/f_logo.svg" alt="Facebook logo"></a>
+                    <a href="https://twitter.com/playhearthstone?lang=cs" target="_blank"><img class="icon" src="./photos/twitter_logo.svg" alt="Twitter logo"></a>
+                    <a href="https://www.youtube.com/user/PlayHearthstone" target="_blank"><img class="icon" src="./photos/yt_logo.svg" alt="Youtube logo"></a>
+                </div> 
             </section>
         </div>  
     </footer>
-    <script src="./scripts/lightbox-plus-jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
