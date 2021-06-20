@@ -4,11 +4,11 @@ body{
 }
 
 a{
-    color: orange;
+    color: rgb(255, 0, 0);
     text-decoration: none;
 }
 a:hover{
-    color: navy;
+    color: rgb(255, 81, 0);
 }
 
 /*-------------------header--------------------*/
@@ -214,6 +214,24 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(47% 0, 100% 25%, 100% 83%, 15% 100%, 0 100%, 0 0);
+}
+.paralax-5::after{
+    content: "";
+    background: url("../photos/paladin.jpg");
+    opacity: 0.7;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    
+    /*--parallax--*/
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(47% 0, 100% 0, 100% 100%, 89% 84%, 0 100%, 0 8%);
 }
 /*----------------------------*/
 
