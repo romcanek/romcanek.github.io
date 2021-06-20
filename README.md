@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Classes</title>
 </head>
 <body onresize="myFunc()" onload="myFunc()">
@@ -75,6 +75,14 @@
             Mage heropower dává jeden dmg kamkoliv bez ohledu na taunty. Patří mezi classy používající secrety. Mage karty mají světle modrý
             okraj s tlustlou linkou arcane dustu.
         </p>
+    </section>
+
+    <section class="paralax paralax-5 centered-content" id="par5">
+    </section>
+
+    <section class="text centered-content" id="par5t">
+        <h2>Paladin</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ipsam quos aliquid vitae nulla nihil maiores consectetur quod ut dolor?</p>
     </section>
 
 
