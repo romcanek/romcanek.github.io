@@ -21,6 +21,7 @@
         </ul>
     </header>
 
+
     <section class="paralax paralax-1 centered-content" id="par1">
     </section>
 
@@ -84,9 +85,23 @@
 
     <section class="text centered-content" id="par5t">
         <h2>Paladin</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam ipsam quos aliquid vitae nulla nihil maiores consectetur quod ut dolor?</p>
+        <p>
+            Paladin je jedna z nejvíce otravných class. Hlavně kvůli jeho levným secretům a healům. Paladin decků
+            je spousta a nedá se uplně vyjmenovat ty nejznámější, ale mezi nejlepší v dnešní době patří <a href="https://hearthstone-decks.net/hand-buff-paladin-18-legend-bodybuilderhs/">Hand buff paladin</a>.
+            Paladinova heropower stojí 2 many a vyvolává 1/1 (jeden útok, jeden život) miniona. Tato heropower patří k těm slabším.
+            Paladinovy karty mají žlutý okraj s paprsky světel.
+        </p>
     </section>
 
+    <section class="paralax paralax-6 centered-content" id="par6">
+    </section>
+
+    <section class="text centered-content" id="par6t">
+        <h2>Priest</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt beatae consectetur itaque autem asperiores error laboriosam expedita ullam rem?
+        </p>
+    </section>
 
     <footer>
         <div class="row">
