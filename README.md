@@ -1,128 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hearthstone Classes">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="js/main.js"></script>
-    <title>Classes</title>
-</head>
-<body onresize="myFunc()" onload="myFunc()">
-    <header class="header">
-        <a href="https://hearthstone.fandom.com/wiki/Class" target="blank" class="logo">CLASSES</a>
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Deck building</a></li>
-            <li><a href="#">About me</a></li>
-        </ul>
-    </header>
+<!doctype html>
+<html>
+    <head>
+        <title>Captain America: Civil War</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="nav-link active">CA:CW</a>
+                <a href="#" class="nav-link active">Domů</a>
+                <a href="#" class="nav-link">O filmu</a>
+                <a href="#" class="nav-link">Týmy</a>
+                <a href="#" class="nav-link">Média</a>
+            </div>
 
+            <div class="jumbotron">
+                <h1>Captain America</h1>
+                <h2>Občanská válka</h2>
+                <p>
+                    Film studia Marvel Captain America: Občanská válka se odehrává v době, kdy Steve Rogers převzal vedení nově zformovaného týmu Avengers, který se nadále snaží chránit lidstvo. Dojde však k dalšímu incidentu, ve kterém sehrají Avengers nešťastnou roli. Politické tlaky vyústí ve vytvoření systému zodpovědnosti vedenému vládní organizací, jež na tým super-hrdinů dohlíží a řídí ho. Nová skutečnost Avengers rozdělí na dva tábory. Jeden vede Steve Rogers, jež hájí svobodu Avengers, aby mohli bránit lidstvo bez vládních zásahů. Druhý vede Tony Stark, který překvapivě zastává myšlenku vládního dohledu a zodpovědnosti. Připravte se vybrat si svou stranu a přidat se k non-stop akci na dvou frontách.
+                </p>
+                <a href="https://www.youtube.com/watch?v=xnv__ogkt0M" target="_blank">
+                    <button class="btn">Trailer</button>
+                </a>
+            </div>
 
-    <section class="paralax paralax-1 centered-content" id="par1">
-    </section>
-
-    <section class="text centered-content" id="par1t">
-        <h2>Demon Hunter</h2>
-        <p>
-            Demon Hunter je nově přidaná Classa do Hearthstonu. Jako jediný používá <a href="https://hearthstone.fandom.com/wiki/Outcast" target="blank">outcast mechaniku</a>
-            Při jeho vydání byl až moc silný a prošel nerfy. Jeho heropower jako jediná ve hře stojí pouze jednu manu a přidá mu jeden útok.
-            Díky tomu se u něj používájí ze jména agresivní balíky, i když jsou zde vyjímky třeba N'zoth Demon Hunter. 
-            Mezi jeho nejsilnější balíky patří odd Demon Hunter, který se hraje na wildu. Je neuvěritelně rychlý a je schopen nepřitele zabít
-            i v pozdějších fazí hry, protože má poměrně hodně možností jak dělat dmg. Jeho karty mají tmavě
-            zelený rámeček, který představuje Illidariho tetování.
-        </p>
-    </section>
-
-    <section class="paralax paralax-2 centered-content" id="par2">
-    </section>
-
-    <section class="text centered-content" id="par2t">
-        <h2>Druid</h2>
-        <p>
-            Druid je známý hlavně dvěma typy balíků. Jedním z nich je <a href="https://www.hearthstonetopdecks.com/decks/token-druid-6-legend-letequila-barrens-caverns" target="blank">token druid</a>
-            a tím druhý je nějaká forma ramp nebo hard control druida v dnešní době je to <a href="https://www.hearthstonetopdecks.com/decks/celestial-druid-early-1-legend-pockettrain-barrens-caverns/" target="blank">celestial druid</a>,
-            který patří k nejsilnějším balíků. Díky kartě Celestial alignment je schopný zastavit tlak nepřítele (pokud nepoužívá drahé karty) a pomocí rampy se dostat napřed.
-            Druid používá dvě speciální mechaniky rampu a choose one. Jeho heropower mu dá jeden armor a jeden útok. Jeho karty mají hnědý rámeček, který symbolizuje trny.
-        </p>
-    </section>
-
-    <section class="paralax paralax-3 centered-content" id="par3">
-    </section>
-
-    <section class="text centered-content" id="par3t">
-        <h2>Hunter</h2>
-        <p>
-            Hunter je asi nejagresivnější classa vůbec. Za celou dobu co existuje vzniklo jen málo kontrolních balíků, které byly
-            většinou mid-range třeba <a href="https://hearthstone-decks.net/reno-hunter-467-legend-cumflatulator/" target="blank">reno hunter</a>. Jeho ikonická heropower dává 2dmg do protivníkova hrdiny. Tato heropower ignoruje taunty.
-            Hunter patří ke classam, které mají secrety, ty jeho stojí dvě many. dále taky používá beasty a zbraně. K jeho nejsilnějším balíkům v dnešní době
-            patří <a href="https://www.hearthstonetopdecks.com/decks/face-hunter-8-legend-aikoio-barrens-caverns/" target="blank">face hunter</a>, hraný na standartu. Má veliké dps hlavně díky Trampling rhino.
-            Jeho karty mají lesově zelený rámeček s úzkým okrajem ve tvaru listů.
-
-        </p>
-    </section>
-
-    <section class="paralax paralax-4 centered-content" id="par4">
-    </section>
-
-    <section class="text centered-content" id="par4t">
-        <h2>Mage</h2>
-        <p>
-            Mage měl většinu své existence taky tři ikonické typy balíků a to <a href="https://www.hearthstonetopdecks.com/decks/tempo-mage-184-legend-punto-the-barrens/" target="blank">tempo mage</a>
-            v dnešní době spíše <a href="https://www.hearthpwn.com/decks/1384714-rank-1-legend-apm-mage" target="blank">apm mage</a>.
-            Další z nich je <a href="https://www.hearthstonetopdecks.com/decks/secret-mage-22-legend-toumlaratt-wild-s87/" target="blank">secret mage</a>,
-            který se dnes hraje na wildu. A tím posledním je hard-control mage například <a href="https://www.hearthstonetopdecks.com/deck-type/freeze-mage/" target="blank">freeze mage</a>.
-            Mage heropower dává jeden dmg kamkoliv bez ohledu na taunty. Patří mezi classy používající secrety. Mage karty mají světle modrý
-            okraj s tlustlou linkou arcane dustu.
-        </p>
-    </section>
-
-    <section class="paralax paralax-5 centered-content" id="par5">
-    </section>
-
-    <section class="text centered-content" id="par5t">
-        <h2>Paladin</h2>
-        <p>
-            Paladin je jedna z nejvíce otravných class. Hlavně kvůli jeho levným secretům a healům. Paladin decků
-            je spousta a nedá se uplně vyjmenovat ty nejznámější, ale mezi nejlepší v dnešní době patří <a href="https://hearthstone-decks.net/hand-buff-paladin-18-legend-bodybuilderhs/">Hand buff paladin</a>.
-            Paladinova heropower stojí 2 many a vyvolává 1/1 (jeden útok, jeden život) miniona. Tato heropower patří k těm slabším.
-            Paladinovy karty mají žlutý okraj s paprsky světel.
-        </p>
-    </section>
-
-    <section class="paralax paralax-6 centered-content" id="par6">
-    </section>
-
-    <section class="text centered-content" id="par6t">
-        <h2>Priest</h2>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto deserunt beatae consectetur itaque autem asperiores error laboriosam expedita ullam rem?
-        </p>
-    </section>
-
-    <footer>
-        <div class="row">
-            <section class="col">
-                <h3>Kontakt</h3>
-                <ul>
-                <li class="footer-text"><a href="mailto:roman.tarnai.020@pslib.cz">roman.tarnai.020@pslib.cz</a></li>
-                <li class="footer-text">704 181 784</li>
-                <li class="footer-text">Czech republic, Hrádek nad Nisou</li>
-                </ul>
-            </section>
-        </div>
-        <div class="row">
-            <section class="col socky">
+            <div class="main-grid">
+                <div class="postavy">
+                    <h1 class="postavy-h">Postavy</h1>
                 <div class="gallery">
-                    <a href="https://www.facebook.com/Hearthstone.en/?brand_redir=498467596862680" target="_blank"><img class="icon" src="./photos/f_logo.svg" alt="Facebook logo"></a>
-                    <a href="https://twitter.com/playhearthstone?lang=cs" target="_blank"><img class="icon" src="./photos/twitter_logo.svg" alt="Twitter logo"></a>
-                    <a href="https://www.youtube.com/user/PlayHearthstone" target="_blank"><img class="icon" src="./photos/yt_logo.svg" alt="Youtube logo"></a>
-                </div> 
-            </section>
-        </div>  
-    </footer>
-</body>
+                    <img class="m1" src="./img/a5 - Captain America.jpg" alt="CaptainAmerica">
+                    <img class="m2" src="./img/b2 - Iron Man.jpg" alt="IronMan">
+                    <img class="l1" src="./img/a3 - Hawkeye.jpg" alt="Hawkeye">
+                    <img class="r1" src="./img/b3 - The Vision.jpg" alt="TheVision">
+                    <img class="l2" src="./img/a4 - Scarlet Witch.jpg" alt="ScarletWitch">
+                    <img class="r2" src="./img/b4 - Black Widow.jpg" alt="BlackWidow">
+                    <img class="l3" src="./img/a6 - Winter Soldier.jpg" alt="WinterSoldier">
+                    <img class="r3" src="./img/b5 - Black Panther.jpg" alt="BlackPanther">
+                </div>
+                </div>
+
+                <div class="galerie">
+                    <h1 class="galerie-h">Fotogalerie</h1>
+                    <div class="carousel">
+                        <div class="carousel_item carousel_item--visible">
+                            <img src="./img/carousel1.jpg" alt="carouselImg1">
+                        </div>
+                        <div class="carousel_item">
+                            <img src="./img/carousel2.jpg" alt="carouselImg2">
+                        </div>
+                        <div class="carousel_item">
+                            <img src="./img/carousel3.jpg" alt="carouselImg3">
+                        </div>
+
+                        <div class="carousel_actions">
+                            <button id="carousel_button--prev" aria-label="Previus slide"><</button>
+                            <button id="carousel_button--next" aria-label="Next Slide">></button>
+                        </div>
+                        <div class="carousel_bullets">
+                            <button onclick="moveToSlide(0)" class="bullet bull-active" id="carousel_bullet_st"></button>
+                            <button onclick="moveToSlide(1)" class="bullet" id="carousel_bullet_nd"></button>
+                            <button onclick="moveToSlide(2)" class="bullet" id="carousel_bullet_rd"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="novinky">
+                    <h1 class="novinky-h">Novinky</h1>
+                    <div class="novinka">
+                        <p>
+                            Dodatečné snény naleznete mezi závěrečnými titulky i za nimi.
+                        </p>
+                        <p>
+                            Stan Lee se tentokrát ukáže až v jedné z posledních scén jako poslíček
+                            předávájíci zásilku pro Tonyho Starka (Robert Downey Jr.)
+                        </p>
+                        <p>
+                            Spôsob boja Captain Americu je založený na starých školách
+                            bojových umení, ako je judu, karate, Tae Kwan Do a Aikido.
+                            Bojové umenie Black Panthera je založené na štýle Capoeira,
+                            čo je forma brazílskeho bojového umenia kombinujúca je aj
+                            čínský vplyv umenia Kung Fu.
+                        </p>
+                        <p>
+                            Vo filme se objavuje aj jeden z najmodernejších automobilov
+                            na svete, ktorý riadi Black Panther. Koncept poskytla
+                            automobilka Audi. Ohromujúce auto má to výbave všetky
+                            najnovšie technológi, ktorými Audi disponuje, avšak do sériovej
+                            výroby doposiaľ neboli zaradené.
+                        </p>
+                        <p>
+                            Okrem londýnských ateliérov v Pinewood, boli filmári schopní
+                            využiť lokality okolo samotnej Atlanty. Jednou takou bola veľká
+                            prázdna strž v centre mesta, kde postavili kulisy Nigerijského
+                            Lagosu. Filmári, kulisári a umelecký tím boli aj vďaka stovkám
+                            komparzistov schopní vytvoriť a oživiť pulzujúce mesto
+                            Lagos na mieste kde by ste ho nečekali.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <a class="nav-link active" href="#">Youtube</a>
+                <a class="nav-link active" href="#">Facebook</a>
+                <a class="nav-link active" href="#">Twitter</a>
+            </footer>
+        </div>
+    </body>
+    <script src="./scripts/carousel.js"></script>
 </html>
