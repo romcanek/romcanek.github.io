@@ -122,6 +122,19 @@ h2{
     grid-template-columns: 1fr 1fr;
     gap: 0.5em;
 }
+.gal-img{
+    position: relative;
+    width: 100%;
+}
+.gal-img p{
+    position: absolute;
+    color: white;
+    width: max-content;
+    top: 80%;
+    left: 50%;
+    font-size: 1.1em;
+    transform: translateX(-50%);
+}
 .gallery img{
     width: 100%;
 }
@@ -136,8 +149,12 @@ h2{
         ;
         overflow-x: scroll;
     }
-    .gallery > img{
-        width: 15em;
+    .gal-img p{
+        top: 60%;
+        font-size: 1em;
+    }
+    .gallery img{
+        width: 10em;
         height: auto;
     }
     .m1{grid-area:m1}
@@ -158,6 +175,14 @@ h2{
         "m1 m1 m1 m2 m2 m2"
         "l1 l2 l3 r1 r2 r3"   /* mixing up the order */
         ;
+    }
+    .gal-img p{
+        top: 55%;
+        font-size: 0.7em;
+    }
+    .m1 p, .m2 p{
+        top: 76%;
+        font-size: 1.1em;
     }
     .m1{grid-area:m1}
     .m2{grid-area:m2}
@@ -278,7 +303,7 @@ h2{
 
     .main-grid{
         display: grid;
-        grid-template-columns: 1.7fr 1fr;
+        grid-template-columns: 2fr 1fr;
         row-gap: 1em;
         grid-template-areas: 
         "postavy novinky"
@@ -359,6 +384,8 @@ h2{
         align-items: center;
     }
 }
+
+
 
 /* animating carousel */
 @keyframes fadeVisibility{
