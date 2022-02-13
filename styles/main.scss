@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Sura:wght@400;700&display=swap');
+@import './navbar';
+
+// =================
+//      global
+// =================
+html, body {
+    height: 100%;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sura', serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+// clip
+.clip{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    box-shadow: 0px 25px 18px -20px black;
+}
+.github-wrap{
+    position: absolute;
+    cursor: pointer;
+    bottom: 1em;
+    right: 1em;
+    width: 124px;
+    .github{
+        width: 100%;
+        height: auto;
+        transition: all 1s ease;
+    }
+    &:hover .github{
+        transform: rotateY(180deg);
+    }
+}
+
+
+// =================
+//   hello section
+// =================
+.hello{
+    margin-top: 20vh;
+    margin-left: 15em;
+    h1{
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 2.25em;
+    }
+    span{
+        font-family: 'Montserrat', sans-serif;
+        color: #5c0096;
+        font-weight: 700;
+        position: relative;
+        &::after{
+            content: "";
+                position: absolute;
+                width: 1px;
+                height: 85%;
+                bottom: 50%;
+                right: -5px;
+                transform: translateY(50%);
+                animation: blink 0.75s infinite ease;
+                border-right: 2px solid #5c0096;
+        }
+    }
+}
+
+// =================
+//      about 
+// =================
+.about{
+    margin: auto;
+    margin-top: 75vh;
+    max-width: 80%;
+    h1{
+        font-size: 46px;
+        font-weight: 400;
+        margin-bottom: 1.8em;
+        text-align: center;
+    }
+    .about-card{
+        opacity: 0;
+        transform: translateX(-150px);
+
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5em;
+        padding-inline: 8em;
+        padding-block: 5em;
+        align-items: flex-start;
+        width: 80%;
+        background: linear-gradient(101.87deg, #300047 9.57%, #09000D 104.98%);
+        border-radius: 30px;
+        .info{
+            opacity: 0;
+            transform: translateY(80px);
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            column-gap: 1em;
+            font-size: 30px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+.about-card.active{
+    animation: aboutMove 1s ease-out forwards;
+    .info[data-num="first"]{
+        animation: info 1s ease 0.8s forwards;
+    }
+    .info[data-num="second"]{
+        animation: info 1s ease 1.6s forwards;
+    }
+    .info[data-num="third"]{
+        animation: info 1s ease 2.4s forwards;
+    }
+}
+
+// =================
+//      skills 
+// =================
+.skills{
+    margin: auto;
+    margin-top: 20vh;
+    width: 90%;
+    h1{
+        font-size: 46px;
+        font-weight: 400;
+        margin-bottom: 1.8em;
+        text-align: center;
+    }
+    .skill-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 5em;
+        .skill{
+            opacity: 0;
+            transform: translateY(80px);
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 1em;
+            img{
+                width: 144px;
+                height: auto;
+            }
+            p{
+                font-size: 24px;
+                max-width: 25em;
+            }
+        }
+    }
+}
+
+.skill-list.active{
+    .skill[data-num="1"]{
+        animation: info 1s ease-in forwards;
+    }
+    .skill[data-num="2"]{
+        animation: info 0.7s ease-in 0.5s forwards;
+    }
+    .skill[data-num="3"]{
+        animation: info 0.7s ease-in 1.2s forwards;
+    }
+    .skill[data-num="4"]{
+        animation: info 0.7s ease-in 1.9s forwards;
+    }
+    .skill[data-num="5"]{
+        animation: info 0.7s ease-in 2.6s forwards;
+    }
+    .skill[data-num="6"]{
+        animation: info 0.7s ease-in 3.3s forwards;
+    }
+}
+
+// =================
+//      projects 
+// =================
+.projects{
+    margin: auto;
+    margin-top: 20vh;
+    width: 90%;
+    h1{
+        font-size: 46px;
+        font-weight: 400;
+        margin-bottom: 1.8em;
+        text-align: center;
+    }
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: black;
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        &:hover{
+            color: #5c0096;
+        }
+    }
+    .carousel{
+        opacity: 0;
+        transform: translateY(80px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        .carousel-container{
+            max-width: 85%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .textBox{
+                background-color: rgba(0, 0, 0, 0.9);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                opacity: 0;
+                transition: all 0.5s;
+                h2{
+                    font-size: 28px;
+                    margin-bottom: 1em;
+                }
+                p{
+                    font-size: 18px;
+                    a{
+                        text-decoration: none;
+                        color: #c870ff;
+                    }
+                }
+                *{
+                    transform: translateY(50px);
+                    transition: all 0.5s ease-out 0.1s;
+                }
+            }
+            .carousel-image{
+                position: relative;
+                &:hover .textBox{
+                    opacity: 1;
+                    *{
+                        transform: translateY(0);
+                    }
+                }
+            }
+            .carousel-image.hide{
+                display: none;
+            }
+            .carousel-image.show{
+                display: block;
+                animation: blink 0.5s;
+            }
+        }
+    }
+}
+
+.carousel.active{
+    animation: info 1s ease-out forwards;
+}
+
+// =================
+//      footer 
+// =================
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 5em;
+    height: 3em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@keyframes info {
+    0%{
+        opacity: 0;
+        transform: translateY(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes aboutMove {
+    0%{
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+// =================
+//      queries 
+// =================
+@media only screen and (max-width: 1335px) {
+    .hello{
+        h1{
+            font-size: 54px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .hello{
+        margin-top: 30vh;
+        margin-left: 10em;
+        h1{
+            font-size: 44px;
+        }
+    }
+
+    .about{
+        margin: auto;
+        margin-top: 75vh;
+        max-width: 95%;
+        h1{
+            text-align: center;
+        }
+        .about-card{
+            max-width: 95%;
+            padding: 2em;
+            .info{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .hello{
+        margin-left: 5em;
+        h1{
+            font-size: 38px;
+        }
+    }
+
+    .about{
+        h1{
+            text-align: center;
+        }
+        .about-card{
+            .info{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .projects{
+        .carousel{
+            .carousel-container{
+                .textBox{
+                    h2{
+                        font-size: 20px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-inline: 2%;
+                    }
+        }   }   }
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .hello{
+        margin-left: 5em;
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    .skills{
+        margin: auto;
+        margin-top: 20vh;
+        width: 90%;
+        h1{
+            font-size: 46px;
+            font-weight: 400;
+            margin-bottom: 1.8em;
+            text-align: center;
+        }
+        .skill-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 5em;
+            .skill{
+                opacity: 0;
+                transform: translateY(80px);
+    
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                column-gap: 1em;
+                img{
+                    width: 100px;
+                    height: auto;
+                }
+                p{
+                    font-size: 20px;
+                    max-width: 25em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .hello{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        h1{
+            color: white;
+            span{
+                color: whitesmoke;
+                &::after{
+                    border-right: 2px solid whitesmoke;
+                }
+            }
+        }
+    }
+    .projects{
+        width: 98%;
+        .carousel{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "im im"
+            "arl arr"
+            ;
+        }
+        .carousel-container{
+            max-width: 100% !important;
+            grid-area: im;
+        }
+        button#arrow-r{
+            grid-area: arr;
+        }
+        button#arrow-l{
+            grid-area: arl;
+        }
+    }
+
+    .about{
+        width: 95%;
+        .about-card{
+            width: 95%;
+            align-items: center;
+            padding-inline: 0;
+            .info{
+                margin-inline: 3%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                row-gap: 1em;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .clip{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        height: auto;
+        height: 100vh;
+        width: 600vw;
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    .hello{
+        width: 80%;
+        h1{
+            font-size: 24px;
+        }
+    }
+
+    .about{
+        h1{
+            font-size: 30px;
+        }
+    }
+    .skills{
+        h1{
+            font-size: 30px;
+        }
+        .skill-list{
+            .skill{
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+    }
+    .projects{
+        h1{
+            font-size: 30px;
+        }
+        .carousel{
+            .carousel-container{
+                .textBox{
+                    h2{
+                        font-size: 18px;
+                        margin-bottom: 1em;
+                    }
+                    p{
+                        font-size: 14px;
+                }   }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px) {
+    .hello{
+        width: 87%;
+        h1{
+            font-size: 20px;
+        }
+    }
+    .about{
+        .about-card{
+            .info{
+                font-size: 13px;
+            }
+        }
+    }
+}
